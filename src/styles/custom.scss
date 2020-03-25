@@ -1,0 +1,105 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+$primary:white;
+$background:#0c0c0c;
+$secondaryTextColor:#d63232e6;
+$navitemcolor:#d63232e6;
+$cardTextColor:darkgray;
+$cardBacground:#080808d1;
+$navItemTextColor:#4c4c4c;
+
+body{
+    background: $background;
+}
+.bg-light{
+    
+    background-color: $primary !important;
+    border-bottom: 3px solid $secondaryTextColor;
+    font-weight: bold;
+    font-family: initial;
+}
+
+        
+
+   
+
+.navbar-light .navbar-nav .nav-link {
+    color:$navItemTextColor;
+    
+}
+.active a{
+    color:$secondaryTextColor !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 1px solid $secondaryTextColor;
+    color:$secondaryTextColor;
+  }
+
+  
+.card-body:hover{
+    background: $cardBacground !important;
+    color: $cardTextColor !important;
+      .card-index{
+            visibility: visible;
+            }
+    }
+
+.card-index {
+        visibility: hidden;
+         text-align: left;
+         color: $cardTextColor;
+         font-weight: bold;
+         font-size: 16px;
+         font-family: initial;
+         display: grid;
+
+         .card-title{
+            font-size: 20px;
+            padding-bottom: 15px;
+            color: $secondaryTextColor;
+            text-align: center;
+          }
+          .card-subtitle{
+            color: $secondaryTextColor;
+             font-size:15px;
+           }
+           .scroll{
+
+            max-height: 185px;
+            overflow-y: scroll;
+        }
+        
+     }   
+
+.card-footer{
+  color: $background;
+    font-weight: bold;
+    font-family: initial;
+    background: $secondaryTextColor;
+
+   
+    }
+    .text-center a{
+        color:$secondaryTextColor;
+      }  
+ /* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
